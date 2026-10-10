@@ -1,125 +1,100 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101010">
-  <meta name="description" content="Personal portfolio of Your Name — IT, systems, and creative technology.">
-  <title>Dodd.gg</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-    :root{--bg:#101010;--panel:#191919;--text:#f3f0e8;--muted:#aaa69c;--lime:#d4ff3f;--line:#343434;--pink:#ff7fbd}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.6}
-    a{color:inherit;text-decoration:none}
-    a:hover{color:var(--lime)}
-    .wrap{width:min(1120px,calc(100% - 44px));margin:auto}
-    .mono{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem}
-    header{padding:23px 0;border-bottom:1px solid var(--line)}
-    nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
-    .logo{font-weight:700;letter-spacing:-.04em}.logo span{color:var(--lime)}
-    .navlinks{display:flex;gap:24px;font-size:.9rem}
-    .hero{padding:100px 0 86px;position:relative;overflow:hidden}
-    .hero:after{content:"";position:absolute;width:330px;height:330px;border:1px solid #363636;border-radius:50%;right:4%;top:90px;box-shadow:0 0 0 32px #161616,0 0 0 33px #2c2c2c,0 0 0 76px #131313,0 0 0 77px #292929;z-index:-1}
-    .kicker{color:var(--lime);display:flex;align-items:center;gap:10px}
-    .dot{width:8px;height:8px;background:var(--lime);border-radius:50%;display:inline-block;box-shadow:0 0 14px #d4ff3f77}
-    h1{font-size:clamp(3.5rem,9vw,8rem);line-height:.91;letter-spacing:-.085em;margin:26px 0;max-width:900px}
-    h1 em{font-style:normal;color:var(--lime)}
-    .intro{font-size:clamp(1.05rem,2.3vw,1.35rem);max-width:570px;color:var(--muted)}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-    .btn{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border:1px solid #555;border-radius:3px;font-weight:600}
-    .btn.primary{background:var(--lime);color:#111;border-color:var(--lime)}
-    .btn.primary:hover{background:#e2ff77}
-    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;color:var(--muted);display:flex;gap:24px;flex-wrap:wrap}
-    .ticker span:before{content:"✳";color:var(--pink);margin-right:9px}
-    section{padding:74px 0}
-    .sectionhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:28px}
-    h2{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.065em;line-height:1.05;margin:0}
-    .number{color:var(--lime)}
-    .aboutgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px}
-    .aboutcopy{font-size:1.2rem;max-width:650px}
-    .muted{color:var(--muted)}
-    .note{border:1px solid var(--line);padding:24px;background:linear-gradient(135deg,#1b1b1b,#131313)}
-    .note strong{display:block;font-size:1.1rem;margin-bottom:8px}
-    .skills{display:flex;gap:10px;flex-wrap:wrap}
-    .skill{border:1px solid #494949;padding:9px 13px;border-radius:2px;color:#dedbd2;font-size:.94rem}
-    .projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-    .project{min-height:230px;padding:24px;border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s}
-    .project:hover{transform:translateY(-4px);border-color:var(--lime)}
-    .project .top{display:flex;justify-content:space-between;gap:12px;color:var(--muted)}
-    .project h3{font-size:1.65rem;line-height:1.1;letter-spacing:-.04em;margin:24px 0 8px}
-    .project p{color:var(--muted);margin:0;max-width:440px}
-    .project .arrow{color:var(--lime);font-size:1.4rem}
-    .contact{padding:38px;border:1px solid var(--line);background:var(--lime);color:#111;display:flex;justify-content:space-between;align-items:center;gap:24px}
-    .contact h2{max-width:680px}
-    .contact .btn{border-color:#111}
-    footer{padding:24px 0 36px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:.85rem}
-    @media(max-width:700px){.wrap{width:min(100% - 30px,1120px)}.navlinks{gap:12px;font-size:.82rem}.hero{padding:72px 0 60px}.hero:after{right:-230px;top:100px}.aboutgrid,.projects{grid-template-columns:1fr}.contact{padding:26px;align-items:flex-start;flex-direction:column}section{padding:54px 0}.sectionhead{align-items:flex-start;flex-direction:column}footer{flex-direction:column}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<meta name="description" content="Will Dodd — Senior Support Technician from Guernsey. Microsoft 365, Azure, troubleshooting, networking and homelab interests.">
+<title>Will Dodd — IT, Networks & Curious Things</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#101010;--panel:#191919;--text:#f3f0e8;--muted:#aaa69c;--lime:#d4ff3f;--line:#343434;--pink:#ff7fbd;--blue:#7ecbff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--text);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}a:hover{color:var(--lime)}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}.mono{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem}
+header{padding:21px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(16,16,16,.86);backdrop-filter:blur(16px);z-index:10}nav{display:flex;justify-content:space-between;align-items:center;gap:20px}.logo{font-weight:700;letter-spacing:-.04em}.logo span{color:var(--lime)}.navlinks{display:flex;gap:24px;font-size:.9rem}.progress{position:absolute;bottom:-1px;left:0;height:2px;background:var(--lime);width:0}
+.hero{padding:95px 0 72px;position:relative;min-height:570px;display:flex;align-items:center}.hero-copy{position:relative;z-index:2;max-width:850px}.kicker{color:var(--lime);display:flex;align-items:center;gap:10px}.dot{width:8px;height:8px;background:var(--lime);border-radius:50%;display:inline-block;box-shadow:0 0 14px #d4ff3f77;animation:pulse 2s infinite}
+h1{font-size:clamp(3.5rem,9vw,8rem);line-height:.91;letter-spacing:-.085em;margin:26px 0;max-width:900px}h1 em{font-style:normal;color:var(--lime)}.intro{font-size:clamp(1.05rem,2.3vw,1.35rem);max-width:600px;color:var(--muted)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border:1px solid #555;border-radius:3px;font-weight:600;transition:transform .2s,border-color .2s,background .2s}.btn:hover{transform:translateY(-3px);border-color:var(--lime)}.btn.primary{background:var(--lime);color:#111;border-color:var(--lime)}.btn.primary:hover{background:#e2ff77}
+.hero-art{position:absolute;right:2%;top:50%;transform:translateY(-48%);width:min(38vw,390px);aspect-ratio:1;opacity:.92;pointer-events:none}.orbit{position:absolute;inset:6%;border:1px solid #3c3c3c;border-radius:50%;animation:spin 38s linear infinite}.orbit.two{inset:18%;border-style:dashed;animation:spin 54s linear infinite reverse}.orbit.three{inset:31%;border-color:#535a2c}.core{position:absolute;inset:39%;display:grid;place-items:center;background:var(--lime);color:#101010;border-radius:28%;transform:rotate(-8deg);box-shadow:0 0 60px #d4ff3f20;animation:bob 5s ease-in-out infinite}.core svg{width:62%;height:62%}
+.float-icon{position:absolute;width:66px;height:66px;display:grid;place-items:center;background:#1b1b1b;border:1px solid #484848;border-radius:17px;box-shadow:0 12px 35px #0006;animation:bob 5s ease-in-out infinite}.float-icon svg{width:38px;height:38px}.float-icon.one{left:7%;top:17%;color:var(--pink);animation-delay:-1s}.float-icon.two{right:1%;top:28%;color:var(--blue);animation-delay:-2.2s}.float-icon.three{right:12%;bottom:7%;color:var(--lime);animation-delay:-.6s}.float-icon.four{left:0;bottom:22%;color:var(--pink);animation-delay:-3s}
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;color:var(--muted);display:flex;gap:24px;flex-wrap:wrap}.ticker span:before{content:"✳";color:var(--pink);margin-right:9px}section{padding:72px 0}.sectionhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:28px}h2{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.065em;line-height:1.05;margin:0}.number{color:var(--lime)}.muted{color:var(--muted)}
+.aboutgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px}.aboutcopy{font-size:1.2rem;max-width:650px}.note{border:1px solid var(--line);padding:24px;background:linear-gradient(135deg,#1b1b1b,#131313);position:relative;overflow:hidden}.note strong{display:block;font-size:1.1rem;margin-bottom:8px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.stat{padding:19px;border:1px solid var(--line);background:#151515}.stat-number{font-size:clamp(1.6rem,3.5vw,2.6rem);font-weight:700;letter-spacing:-.06em;color:var(--lime);line-height:1.1}.stat-label{font-size:.85rem;color:var(--muted);margin-top:8px}
+.skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.skill{min-height:155px;border:1px solid var(--line);background:var(--panel);padding:18px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}.skill:hover{transform:translateY(-5px) rotate(-.5deg);border-color:var(--lime)}.skill-icon{width:45px;height:45px;margin-bottom:15px;color:var(--lime)}.skill h3{font-size:1.03rem;margin:0 0 5px}.skill p{font-size:.88rem;color:var(--muted);margin:0}
+.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project{min-height:235px;padding:24px;border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s,border-color .25s;position:relative;overflow:hidden}.project:hover{transform:translateY(-4px);border-color:var(--lime)}.project .top{display:flex;justify-content:space-between;gap:12px;color:var(--muted)}.project h3{font-size:1.65rem;line-height:1.1;letter-spacing:-.04em;margin:24px 0 8px}.project p{color:var(--muted);margin:0;max-width:440px}.project .arrow{color:var(--lime);font-size:1.4rem;align-self:flex-end;margin-top:12px}.project-art{position:absolute;right:18px;top:50px;width:76px;height:76px;color:#d4ff3f20}
+.contact{padding:38px;border:1px solid var(--line);background:var(--lime);color:#111;display:flex;justify-content:space-between;align-items:center;gap:24px}.contact h2{max-width:680px}.contact .btn{border-color:#111}.contact .btn:hover{background:#111;color:var(--lime)}footer{padding:24px 0 36px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:.85rem}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}.backtop{position:fixed;right:20px;bottom:20px;width:42px;height:42px;background:var(--lime);color:#111;display:grid;place-items:center;border:0;border-radius:3px;cursor:pointer;opacity:0;transform:translateY(12px);transition:opacity .2s,transform .2s;z-index:8}.backtop.show{opacity:1;transform:translateY(0)}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -10px}}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #d4ff3f66}50%{box-shadow:0 0 0 7px #d4ff3f00}}
+@media(max-width:850px){.hero-art{right:-8%;opacity:.38;width:390px}.hero-copy{max-width:760px}.skills{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:span 2}}
+@media(max-width:620px){.wrap{width:min(100% - 30px,1120px)}.navlinks{gap:12px;font-size:.82rem}.hero{padding:70px 0 58px;min-height:auto}.hero-art{right:-150px;top:45%;width:350px;opacity:.22}h1{font-size:clamp(3.2rem,16vw,5.5rem)}.aboutgrid,.projects{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.skill{padding:14px;min-height:145px}.contact{padding:26px;align-items:flex-start;flex-direction:column}section{padding:54px 0}.sectionhead{align-items:flex-start;flex-direction:column}footer{flex-direction:column}.stats{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
 </head>
 <body>
-  <header>
-    <nav class="wrap" aria-label="Main navigation">
-      <a class="logo" href="#home">Dodd.gg<span>.</span></a>
-      <div class="navlinks">
-        <a href="#about">Socials</a><a href="#skills">Games</a><a href="#work">About</a><a href="#contact">Contact ↗</a>
-      </div>
-    </nav>
-  </header>
-  <main id="home">
-    <section class="hero wrap">
-      <div class="kicker mono"><span class="dot"></span> IT professional · Curious by default</div>
-      <h1><br>You found me - lets play <em>together.</em></h1>
-      <p class="intro">I'm Dodd — an IT professional that plays an unhealthy ammount of games outside of work.</p>
-      <div class="cta">
-        <a class="btn primary" href="#work">Games I play <span>↘</span></a>
-        <a class="btn" href="#contact">Say hello <span>↗</span></a>
-      </div>
-    </section>
-    <div class="ticker wrap mono"><span>Systems & support</span><span>Networking</span><span>Automation</span><span>Creative technology</span></div>
-
-    <section id="about" class="wrap">
-      <div class="sectionhead"><h2><span class="number mono">01 /</span> A little about me</h2><span class="mono muted">The person behind the keyboard</span></div>
-      <div class="aboutgrid">
-        <p class="aboutcopy">I like untangling tricky problems, understanding how things fit together, and turning rough ideas into useful, dependable solutions. Outside day-to-day IT, I'm exploring projects that help me learn and build.</p>
-        <div class="note"><strong>Currently interested in ↗</strong><span class="muted">Homelab projects, cloud platforms, network design, scripting, and making the digital world a little less complicated.</span></div>
-      </div>
-    </section>
-
-    <section id="skills" class="wrap">
-      <div class="sectionhead"><h2><span class="number mono">02 /</span> My toolkit</h2><span class="mono muted">Areas I work with</span></div>
-      <div class="skills">
-        <span class="skill">IT Support</span><span class="skill">Networking</span><span class="skill">Windows & Linux</span><span class="skill">Cloud Services</span><span class="skill">Scripting & Automation</span><span class="skill">Troubleshooting</span><span class="skill">Homelab</span><span class="skill">Documentation</span>
-      </div>
-    </section>
-
-    <section id="work" class="wrap">
-      <div class="sectionhead"><h2><span class="number mono">03 /</span> Selected Games</h2><span class="mono muted">A few things I'm building</span></div>
-      <div class="projects">
-        <article class="project">
-          <div class="top mono"><span>01 — Multiplayer</span><span>Open scale war</span></div>
-          <div><h3>War Dogs</h3><p>Who isnt playing this game at the moment?</p></div>
-          <div class="arrow">↗</div>
-        </article>
-        <article class="project">
-          <div class="top mono"><span>02 — Automation</span><span>Tools</span></div>
-          <div><h3>Less repetition. More time.</h3><p>Showcase a script, workflow, dashboard, or tool that solves a real problem. Add a link to the repository if public.</p></div>
-          <div class="arrow">↗</div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="wrap">
-      <div class="contact">
-        <div><div class="mono">Have a question or idea?</div><h2>Let's make something useful.</h2></div>
-        <a class="btn" href="mailto:you@example.com">Email me ↗</a>
-      </div>
-      <p class="muted" style="margin-top:18px">Also around: <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></p>
-    </section>
-  </main>
-  <footer class="wrap"><span>© <span id="year"></span> Dodd.gg</span><span class="mono">Built with a tone of AI..! </span></footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<header><nav class="wrap" aria-label="Main navigation"><a class="logo" href="#home">WILL DODD<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#interests">Interests</a><a href="#contact">Contact ↗</a></div><div class="progress" id="progress"></div></nav></header>
+<main id="home">
+<section class="hero wrap"><div class="hero-copy"><div class="kicker mono"><span class="dot"></span> Senior Support Technician · Guernsey</div><h1>Keeping tech<br>running.<br><em>Making it neat.</em></h1><p class="intro">I'm Will Dodd — an IT support technician with a love for solving problems, building reliable systems, and exceptionally tidy network racks.</p><div class="cta"><a class="btn primary" href="#skills">What I do <span>↘</span></a><a class="btn" href="https://www.linkedin.com/in/whdodd/" target="_blank" rel="noreferrer">Find me on LinkedIn <span>↗</span></a></div></div>
+<div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="core"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="44" height="30" rx="3"/><path d="M22 52h20M32 42v10M19 22l7 6-7 6M31 34h12"/></svg></div>
+<div class="float-icon one"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="8" y="8" width="32" height="12" rx="3"/><rect x="8" y="28" width="32" height="12" rx="3"/><path d="M14 14h1m-1 20h1M21 14h12M21 34h12"/></svg></div>
+<div class="float-icon two"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="24" cy="24" r="5"/><circle cx="9" cy="10" r="4"/><circle cx="39" cy="10" r="4"/><circle cx="9" cy="38" r="4"/><circle cx="39" cy="38" r="4"/><path d="M20 20 12 13m16 7 8-7M20 28l-8 7m16-7 8 7"/></svg></div>
+<div class="float-icon three"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><path d="M8 17 24 8l16 9-16 9-16-9Z"/><path d="M8 25l16 9 16-9M8 33l16 9 16-9"/></svg></div>
+<div class="float-icon four"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 7 12v11c0 10 7 16 17 20 10-4 17-10 17-20V12L24 5Z"/><path d="m16 24 5 5 11-12"/></svg></div></div></section>
+<div class="ticker wrap mono"><span>Microsoft 365</span><span>Azure</span><span>Hardware & software</span><span>Networking</span><span>Home labs</span></div>
+<section id="about" class="wrap reveal"><div class="sectionhead"><h2><span class="number mono">01 /</span> A little about me</h2><span class="mono muted">Curious by default</span></div><div class="aboutgrid"><p class="aboutcopy">I'm a Senior Support Technician based in Guernsey. I enjoy getting to the bottom of technical problems, helping people get back to work, and making sure the systems behind the scenes are reliable. My day-to-day experience spans Microsoft 365, Azure, and the practical realities of hardware, software, and troubleshooting.</p><div class="note"><strong>My kind of satisfying work ↗</strong><span class="muted">A tricky issue finally solved. A network that just works. A clean installation. And a rack where every cable has a place.</span></div></div>
+<div class="stats"><div class="stat reveal"><div class="stat-number" id="daysCount">—</div><div class="stat-label">Days working in IT since Jan 2013</div></div><div class="stat reveal"><div class="stat-number">M365 + Azure</div><div class="stat-label">Cloud and productivity support</div></div><div class="stat reveal"><div class="stat-number">Always learning</div><div class="stat-label">Networks, kit, labs and what’s next</div></div></div></section>
+<section id="skills" class="wrap reveal"><div class="sectionhead"><h2><span class="number mono">02 /</span> What I work with</h2><span class="mono muted">Tools, platforms & problem solving</span></div><div class="skills">
+<article class="skill reveal"><svg class="skill-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="8" width="38" height="26" rx="3"/><path d="M17 42h14M24 34v8M13 17h10M13 23h22"/></svg><h3>Microsoft 365</h3><p>User support, apps, access and cloud productivity.</p></article>
+<article class="skill reveal"><svg class="skill-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M24 5 7 14v20l17 9 17-9V14L24 5Z"/><path d="m7 14 17 10 17-10M24 24v19M16 10l17 10"/></svg><h3>Azure</h3><p>Cloud platform support and connected services.</p></article>
+<article class="skill reveal"><svg class="skill-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="6" y="7" width="36" height="14" rx="3"/><rect x="6" y="27" width="36" height="14" rx="3"/><path d="M12 14h1m-1 20h1M19 14h16M19 34h16"/></svg><h3>Hardware & software</h3><p>Finding root causes and keeping devices running.</p></article>
+<article class="skill reveal"><svg class="skill-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="24" cy="24" r="6"/><circle cx="8" cy="9" r="3"/><circle cx="40" cy="9" r="3"/><circle cx="8" cy="39" r="3"/><circle cx="40" cy="39" r="3"/><path d="m20 20-10-8m18 8 10-8M20 28l-10 8m18-8 10 8"/></svg><h3>Networking</h3><p>Connectivity, equipment, installs and network design.</p></article>
+<article class="skill reveal"><svg class="skill-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M24 5 7 12v11c0 10 7 16 17 20 10-4 17-10 17-20V12L24 5Z"/><path d="m16 24 5 5 11-12"/></svg><h3>Troubleshooting</h3><p>Methodical diagnosis across apps, OS and equipment.</p></article>
+<article class="skill reveal"><svg class="skill-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="9" y="5" width="30" height="38" rx="3"/><path d="M15 13h18M15 20h18M15 27h8"/><circle cx="31" cy="34" r="3"/></svg><h3>Installation & setup</h3><p>Equipment configured, labelled and working properly.</p></article>
+<article class="skill reveal"><svg class="skill-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="7" y="6" width="34" height="36" rx="3"/><path d="M12 14h24M12 22h24M12 30h24M12 36h24"/><circle cx="15" cy="10" r="1"/></svg><h3>Neat rack builds</h3><p>Rack layouts, cable management and clean finishes.</p></article>
+<article class="skill reveal"><svg class="skill-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="5" y="8" width="38" height="26" rx="3"/><path d="M17 42h14M24 34v8M14 19l5 5-5 5M24 29h10"/></svg><h3>Home labs</h3><p>Small environments to experiment, learn and test ideas.</p></article>
+</div></section>
+<section id="interests" class="wrap reveal"><div class="sectionhead"><h2><span class="number mono">03 /</span> The things I geek out on</h2><span class="mono muted">Beyond the ticket queue</span></div><div class="projects">
+<article class="project"><svg class="project-art" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2"><rect x="14" y="8" width="52" height="64" rx="4"/><path d="M20 19h40M20 32h40M20 45h40M20 58h40"/><circle cx="25" cy="25" r="2"/></svg><div class="top mono"><span>01 — Rack aesthetics</span><span>Very serious business</span></div><div><h3>Clean racks. Clean thinking.</h3><p>Well-planned rack layouts, tidy patch leads, good labels and equipment installed with care.</p></div><div class="arrow">✳</div></article>
+<article class="project"><svg class="project-art" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2"><circle cx="40" cy="40" r="10"/><circle cx="15" cy="17" r="5"/><circle cx="65" cy="17" r="5"/><circle cx="15" cy="63" r="5"/><circle cx="65" cy="63" r="5"/><path d="m33 33-14-12m28 12 14-12M33 47 19 59m28-12 14 12"/></svg><div class="top mono"><span>02 — Networking</span><span>Connect the dots</span></div><div><h3>How everything connects.</h3><p>Switches, access points, cabling and network design — making infrastructure work better.</p></div><div class="arrow">✳</div></article>
+<article class="project"><svg class="project-art" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2"><path d="M40 9 11 25v30l29 16 29-16V25L40 9Z"/><path d="m11 25 29 17 29-17M40 42v29"/></svg><div class="top mono"><span>03 — Home lab</span><span>Learn by building</span></div><div><h3>A playground for ideas.</h3><p>Small lab builds to try services, test configurations and learn by getting hands-on.</p></div><div class="arrow">✳</div></article>
+<article class="project"><svg class="project-art" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="13" width="60" height="43" rx="4"/><path d="M22 66h36M40 56v10M24 28l8 7-8 7M39 42h16"/></svg><div class="top mono"><span>04 — Problem solving</span><span>One clue at a time</span></div><div><h3>Find the actual cause.</h3><p>Work through the clues, narrow down possibilities and find a fix that makes sense.</p></div><div class="arrow">✳</div></article>
+</div></section>
+<section id="contact" class="wrap reveal"><div class="contact"><div><div class="mono">Got a question, idea or interesting bit of kit?</div><h2>Let's connect.</h2></div><a class="btn" href="https://www.linkedin.com/in/whdodd/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div><p class="muted" style="margin-top:18px">Will Dodd · Guernsey · Senior Support Technician</p></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Will Dodd</span><span class="mono">Built with curiosity · Hosted on Cloudflare Pages</span></footer>
+<button class="backtop" id="backtop" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+(()=> {
+  // January 2013 was supplied without a day, so count from 1 January 2013.
+  const startDate = new Date(2013, 0, 1);
+  const daysEl = document.getElementById('daysCount');
+  const fmt = new Intl.NumberFormat('en-GB');
+  function updateDays() {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const days = Math.max(0, Math.floor((today - startDate) / 86400000));
+    daysEl.textContent = fmt.format(days);
+    daysEl.setAttribute('aria-label', fmt.format(days) + ' days working in IT');
+  }
+  updateDays();
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    }), {threshold: .12});
+    reveals.forEach(el => observer.observe(el));
+  } else reveals.forEach(el => el.classList.add('visible'));
+  const progress = document.getElementById('progress'), backtop = document.getElementById('backtop');
+  let ticking = false;
+  function onScroll() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (max > 0 ? window.scrollY / max * 100 : 0) + '%';
+    backtop.classList.toggle('show', window.scrollY > 500);
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(onScroll); ticking = true; } }, {passive:true});
+  onScroll();
+  backtop.addEventListener('click', () => window.scrollTo({top:0, behavior:reduceMotion ? 'auto' : 'smooth'}));
+})();
+</script>
+</body></html>
