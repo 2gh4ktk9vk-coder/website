@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Personal portfolio of Your Name — IT, systems, and creative technology.">
+  <title>Your Name — IT & Creative Technology</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+    :root{--bg:#101010;--panel:#191919;--text:#f3f0e8;--muted:#aaa69c;--lime:#d4ff3f;--line:#343434;--pink:#ff7fbd}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    a:hover{color:var(--lime)}
+    .wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+    .mono{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem}
+    header{padding:23px 0;border-bottom:1px solid var(--line)}
+    nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .logo{font-weight:700;letter-spacing:-.04em}.logo span{color:var(--lime)}
+    .navlinks{display:flex;gap:24px;font-size:.9rem}
+    .hero{padding:100px 0 86px;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:330px;height:330px;border:1px solid #363636;border-radius:50%;right:4%;top:90px;box-shadow:0 0 0 32px #161616,0 0 0 33px #2c2c2c,0 0 0 76px #131313,0 0 0 77px #292929;z-index:-1}
+    .kicker{color:var(--lime);display:flex;align-items:center;gap:10px}
+    .dot{width:8px;height:8px;background:var(--lime);border-radius:50%;display:inline-block;box-shadow:0 0 14px #d4ff3f77}
+    h1{font-size:clamp(3.5rem,9vw,8rem);line-height:.91;letter-spacing:-.085em;margin:26px 0;max-width:900px}
+    h1 em{font-style:normal;color:var(--lime)}
+    .intro{font-size:clamp(1.05rem,2.3vw,1.35rem);max-width:570px;color:var(--muted)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border:1px solid #555;border-radius:3px;font-weight:600}
+    .btn.primary{background:var(--lime);color:#111;border-color:var(--lime)}
+    .btn.primary:hover{background:#e2ff77}
+    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;color:var(--muted);display:flex;gap:24px;flex-wrap:wrap}
+    .ticker span:before{content:"✳";color:var(--pink);margin-right:9px}
+    section{padding:74px 0}
+    .sectionhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:28px}
+    h2{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.065em;line-height:1.05;margin:0}
+    .number{color:var(--lime)}
+    .aboutgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px}
+    .aboutcopy{font-size:1.2rem;max-width:650px}
+    .muted{color:var(--muted)}
+    .note{border:1px solid var(--line);padding:24px;background:linear-gradient(135deg,#1b1b1b,#131313)}
+    .note strong{display:block;font-size:1.1rem;margin-bottom:8px}
+    .skills{display:flex;gap:10px;flex-wrap:wrap}
+    .skill{border:1px solid #494949;padding:9px 13px;border-radius:2px;color:#dedbd2;font-size:.94rem}
+    .projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .project{min-height:230px;padding:24px;border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s}
+    .project:hover{transform:translateY(-4px);border-color:var(--lime)}
+    .project .top{display:flex;justify-content:space-between;gap:12px;color:var(--muted)}
+    .project h3{font-size:1.65rem;line-height:1.1;letter-spacing:-.04em;margin:24px 0 8px}
+    .project p{color:var(--muted);margin:0;max-width:440px}
+    .project .arrow{color:var(--lime);font-size:1.4rem}
+    .contact{padding:38px;border:1px solid var(--line);background:var(--lime);color:#111;display:flex;justify-content:space-between;align-items:center;gap:24px}
+    .contact h2{max-width:680px}
+    .contact .btn{border-color:#111}
+    footer{padding:24px 0 36px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:.85rem}
+    @media(max-width:700px){.wrap{width:min(100% - 30px,1120px)}.navlinks{gap:12px;font-size:.82rem}.hero{padding:72px 0 60px}.hero:after{right:-230px;top:100px}.aboutgrid,.projects{grid-template-columns:1fr}.contact{padding:26px;align-items:flex-start;flex-direction:column}section{padding:54px 0}.sectionhead{align-items:flex-start;flex-direction:column}footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="logo" href="#home">YOUR NAME<span>.</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#contact">Contact ↗</a>
+      </div>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="hero wrap">
+      <div class="kicker mono"><span class="dot"></span> IT professional · Curious by default</div>
+      <h1>Making tech<br>work <em>better.</em></h1>
+      <p class="intro">I'm Your Name — an IT professional interested in reliable systems, thoughtful design, and the small details that make technology feel effortless.</p>
+      <div class="cta">
+        <a class="btn primary" href="#work">Explore my work <span>↘</span></a>
+        <a class="btn" href="#contact">Say hello <span>↗</span></a>
+      </div>
+    </section>
+    <div class="ticker wrap mono"><span>Systems & support</span><span>Networking</span><span>Automation</span><span>Creative technology</span></div>
+
+    <section id="about" class="wrap">
+      <div class="sectionhead"><h2><span class="number mono">01 /</span> A little about me</h2><span class="mono muted">The person behind the keyboard</span></div>
+      <div class="aboutgrid">
+        <p class="aboutcopy">I like untangling tricky problems, understanding how things fit together, and turning rough ideas into useful, dependable solutions. Outside day-to-day IT, I'm exploring projects that help me learn and build.</p>
+        <div class="note"><strong>Currently interested in ↗</strong><span class="muted">Homelab projects, cloud platforms, network design, scripting, and making the digital world a little less complicated.</span></div>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap">
+      <div class="sectionhead"><h2><span class="number mono">02 /</span> My toolkit</h2><span class="mono muted">Areas I work with</span></div>
+      <div class="skills">
+        <span class="skill">IT Support</span><span class="skill">Networking</span><span class="skill">Windows & Linux</span><span class="skill">Cloud Services</span><span class="skill">Scripting & Automation</span><span class="skill">Troubleshooting</span><span class="skill">Homelab</span><span class="skill">Documentation</span>
+      </div>
+    </section>
+
+    <section id="work" class="wrap">
+      <div class="sectionhead"><h2><span class="number mono">03 /</span> Selected work</h2><span class="mono muted">A few things I'm building</span></div>
+      <div class="projects">
+        <article class="project">
+          <div class="top mono"><span>01 — Homelab</span><span>Infrastructure</span></div>
+          <div><h3>A small lab, big lessons.</h3><p>Describe a homelab, virtualisation setup, network experiment, or service you've built and what you learned from it.</p></div>
+          <div class="arrow">↗</div>
+        </article>
+        <article class="project">
+          <div class="top mono"><span>02 — Automation</span><span>Tools</span></div>
+          <div><h3>Less repetition. More time.</h3><p>Showcase a script, workflow, dashboard, or tool that solves a real problem. Add a link to the repository if public.</p></div>
+          <div class="arrow">↗</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <div class="contact">
+        <div><div class="mono">Have a question or idea?</div><h2>Let's make something useful.</h2></div>
+        <a class="btn" href="mailto:you@example.com">Email me ↗</a>
+      </div>
+      <p class="muted" style="margin-top:18px">Also around: <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></p>
+    </section>
+  </main>
+  <footer class="wrap"><span>© <span id="year"></span> Your Name</span><span class="mono">Built with care · Hosted on Cloudflare Pages</span></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
